@@ -1,0 +1,366 @@
+body{
+    background-color: #03396C;
+    margin: 0;
+    ;
+}
+.main{
+   margin-right: 0;
+   margin-bottom: 0;
+    margin: 0;
+    
+}
+/*semi-main*/
+.semi-main{
+    margin-top: 50px;
+}
+/*Menu*/
+.menu img{
+    width:60px;
+    height: 60px;
+}
+.menu{
+    border: 1px solid #E2AF6D;
+    width:150px;
+    height: 100%;
+    border-left:#03396C;
+    border-top:#03396C;
+    border-bottom: #03396C;
+}
+.user{
+    position: relative;
+    top:-60px;
+    left:40px;
+}
+.menu a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 118px;
+    
+}
+.home{
+    width:60px;
+    height:60px;
+    position: relative;
+    left:35px;
+    top:30px;
+}
+.one{
+    position:relative;
+    left:40px;
+    top:40px;
+    letter-spacing: 1px;
+}
+.two{
+    position: relative;
+    left:40px;
+    top:-10px;
+    letter-spacing: 1px;
+}
+.three{
+    position: relative;
+    left:40px;
+    top:-50px;
+    letter-spacing: 1px;
+}
+.four{
+    position: relative;
+    top:-90px;
+    left:40px;
+    letter-spacing: 1px;
+}
+
+/*Top line*/
+.topline{
+    position: relative;
+    left:170px;
+    top:-590px;
+}
+.topline input{
+    background-color:#174775;
+    border-radius: 20px;
+    border:none;
+    width:400px;
+    height:30px;
+    margin-right:10px;
+}
+.search{
+    width:15px;
+    height:15px;
+    position: relative;
+    left:30px;
+    top:3px;
+}
+.mail{
+    position: relative;
+    top:7px;
+    left:-5px;
+}
+::placeholder{
+    position: relative;
+    left:30px;
+    font-family: 'Roboto';
+    color:#E2AF6D;
+}
+/*arts*/
+.arts{
+    background: url('Imgs/arts4.jpg');
+    width:439px;
+    height:200px;
+    position:relative;
+    left:180px;
+    top:-555px;
+    border-radius: 20px;
+}
+.arts button{
+    position: relative;
+    top:50px;
+    left:10px;
+    color:#011F4B;
+}
+.arts p{
+    position: relative;
+    left:378px;
+    top:-30px;
+    color:#011F4B;
+}
+.arts img{
+    position:relative;
+    left:400px;
+    top:90px;
+}
+
+/*Kiswahili*/
+.kiswahili{
+    background: url('Imgs/kiswahili3.jpg');
+    width:200px;
+    height:150px;
+    position:relative;
+    left:180px;
+    top:-500px;
+    border-radius: 20px;
+}
+.kiswahili p{
+    color:white;
+    position: relative;
+    left:130px;
+    top:-30px;
+}
+.kiswahili button{
+    position: relative;
+    left:10px;
+    top:50px;
+    color:#011F4B;
+}
+.kiswahili img{
+    position:relative;
+    left:170px;
+    top:40px;
+}   
+
+/*History*/
+.history{
+    background: url('Imgs/history3.jpg');
+    width:230px;
+    height:150px;
+    position:relative;
+    left:400px;
+    top:-650px;
+    border-radius: 20px;
+}
+.history p{
+    color:#011F4B;
+    position: relative;
+    top:-30px;
+    left:165px;
+}
+.history img{
+    position:relative;
+    left:190px;
+    top:40px;
+}
+.history button{
+    position: relative;
+    left:5px;
+    top:35px;
+    color:#011F4B;     
+}
+/*Sidebar*/
+
+.progress img{
+    width:56px;
+    height:51px;
+}
+.sidebar{
+    position: relative;
+    left:800px;
+    top:-700px;
+    height:50px;
+}
+.progress{
+    background-color: #E2AF6D;
+    width:330px;
+    height:200px;
+    position: relative;
+    left:-140px;
+    top:-440px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 5px 3px #fff;
+    -moz-box-shadow: 0 0 5px 3px #fff;
+    box-shadow: 0 0 5px 3px #fff;
+}
+.un{
+    position: relative;
+    left:20px;
+    top:10px;
+    font-size: 18px;
+    font-family:'quicksand';
+    color:white;
+    letter-spacing: 1px;
+}
+.progress a{
+    position: relative;
+    top:-65px;
+    left:270px;
+    text-decoration: none;
+    color:#03396C;
+}
+.sept{
+    border-radius:20px;
+    border:1px solid white;
+    position:relative;
+    left:-40px;
+}
+.deux{
+    position: relative;
+    left:90px;
+    top:-60px;
+    color:#03396C;
+}
+#white1{
+    width:130px;
+    position: relative;
+    top:-72px;
+    left:40px;
+    border-radius:20px;
+    border:none;
+    height:9px;
+}
+#blue1{
+    width:50px;
+    height:9px;
+    position: relative;
+    top:-72px;
+    left:94px;
+    border-radius:20px;
+    border:none;
+    background-color:#03396C;
+    z-index:2;
+}
+.trois{
+    color:#03396C;
+    position: relative;
+    left:235px;
+    top:-104px;
+    font-size:14px;
+    font-family: 'roboto';
+}
+.six{
+    border-radius:20px;
+    border:1px solid white;
+    position:relative;
+    left:18px;
+    top:-90px;  
+}
+.quatre{
+    position: relative;
+    left:90px;
+    top:-150px;
+    color:#03396C;
+}
+#white2{
+    width:130px;
+    position: relative;
+    top:-160px;
+    left:95px;
+    border-radius:20px;
+    border:none;
+    height:9px;
+}
+#blue2{
+    width:100px;
+    height:9px;
+    position: relative;
+    top:-160px;
+    left:-40px;
+    border-radius:20px;
+    border:none;
+    background-color:#03396C;
+    z-index:2;
+}
+.cinq{
+    color:#03396C;
+    position: relative;
+    left:235px;
+    top:-190px;
+    font-size:14px;
+    font-family: 'roboto';
+}
+
+.achievements{
+    background-color: #E2AF6D;
+    width:330px;
+    height:310px;
+    position: relative;
+    left:-140px;
+    top:-400px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 5px 3px #fff;
+    -moz-box-shadow: 0 0 5px 3px #fff;
+    box-shadow: 0 0 5px 3px #fff;
+}
+.onze{
+    position: relative;
+    left:20px;
+    top:10px;
+    font-size: 18px;
+    font-family:'quicksand';
+    color:white;
+    letter-spacing: 1px;
+}
+.achievements a{
+    position: relative;
+    top:-110px;
+    left:270px;
+    text-decoration: none;
+    color:#03396C;
+}
+#one{
+    position: relative;
+    left:-55px;
+}
+.deuze{
+    font-size: 14px;
+    font-family: 'roboto';
+    color:#03396C;
+    position: relative;
+    left:100px;
+    top:-90px;
+}
+.treize{  
+    font-size: 14px;
+    font-family: 'roboto';
+    color:white;
+    position: relative;
+    left:150px;
+    top:-90px; 
+    letter-spacing: 1px;
+}
+#two{
+    position: relative;
+    left:120px;
+    top:-90px;
+    width:20px;
+    height:20px;
+}

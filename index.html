@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+        integrity="sha256-MlusDLJIP1GRgLrOflUQtshP0TwT/RHXsl1wWGnQhs=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bevan|Boogaloo|Bowlby+One+SC|Caveat+Brush|Changa+One|Chewy|Concert+One|Fredoka+One|Kumar+One|Lilita+One|Monoton|Nanum+Pen+Script|Patrick+Hand|Permanent+Marker|Rock+Salt|Rubik+Mono+One|Seymour+One|Sigmar+One|Special+Elite|Titan+One|Ultra&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Anton|Baloo|Baloo+Bhai|Bowlby+One+SC|Calistoga|Concert+One|Fredoka+One|Fugaz+One|IBM+Plex+Mono|Modak|Pangolin|Rubik+Mono+One|Special+Elite|Varela+Round|Viga&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/search.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="">
+    <script src="js\script.js"></script>
+    <title>FUNDISHA</title>
+</head>
+<style>
+    .stu {
+        background-image: url("assets/images/bl.jpeg");
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    #snackbar,
+    #snackbb,
+    #snackb {
+        visibility: hidden;
+        min-width: 350px;
+        margin-left: -125px;
+        background-color: #03396c;
+        opacity: 90%;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 1.5s, fadeout 0.5s 5.5s;
+        animation: fadein 1.5s, fadeout 0.5s 5.5s;
+    }
+
+    #snackbb.show {
+        visibility: visible;
+        -webkit-animation: fadein 1.5s, fadeout 0.5s 5.5s;
+        animation: fadein 1.5s, fadeout 0.5s 5.5s;
+    }
+
+    #snackb.show {
+        visibility: visible;
+        -webkit-animation: fadein 1.5s, fadeout 2.5s 5.5s;
+        animation: fadein 1.5s, fadeout 0.5s 5.5s;
+    }
+
+    @-webkit-keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+
+    /*media screen*/
+    @media screen and (max-width: 500px) {
+
+        #snackbar,
+        #snackbb,
+        #snackb {
+            visibility: hidden;
+            min-width: 200px;
+            margin-left: -120px;
+            background-color: #03396c;
+            opacity: 90%;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: scroll;
+            z-index: 1;
+            bottom: 30px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+
+        #snackbar,
+        #snackbb,
+        #snackb {
+            visibility: hidden;
+            min-width: 100px;
+            margin-left: -120px;
+            background-color: #e2af6d;
+            opacity: 90%;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 2px;
+            padding: 10px;
+            position: fixed;
+            z-index: 1;
+            bottom: 30px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+    }
+</style>
+
+<body scroll-behavior: smooth;>
+    <div class="header" id="hea" scroll-behavior: smooth;>
+        <a href="index.html">
+            <h2>FUNDISHA</h2>
+        </a>
+        <a href="index.html"><img src="assets/icons/earth.png">
+        </a>
+        <a href="index.html"><img src="assets/icons/act.png"></a>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search.." name="search" required>
+                <button type="submit"><img id="imeg" src="assets/icons/search.png"></button>
+                <!-- <button type="submit"><img src="assets/icons/sear.png"></button> -->
+                <!-- <button type="submit"><img src="assets/icons/sear.png"></img></button> -->
+            </form>
+        </div>
+    </div>
+    <div class="stu" alt="responsive">
+        <div class="navbar">
+            <a href="signup.html">
+                <p>SIGN UP</p>
+            </a>
+            <a href="login.html">
+                <p>LOG IN</p>
+            </a>
+            <a href="#">
+                <p>BLOG</p>
+            </a>
+            <a href="#cos">
+                <p>COURSES</p>
+            </a>
+            <a href="#jbs">
+                <p>JOBS</p>
+            </a>
+            <a href="#">
+                <p>ABOUT US</p>
+            </a>
+            <!-- <a href="home.html"><img src="logos/hm.png"></a> -->
+        </div>
+        <br><br><br><br>
+        <br><br>
+        <div class="sidenav">
+            <a href="#call" onclick="myFunction1()"><img src="..\Assets\logos\pne.png"></a>
+            <div id="snackbar">Call us: +254701-255-700</div>
+            <a href="#share"><img src="..\Assets\logos\share.png"></a>
+            <a href="#email" onclick="myFunction2()"><img src="..\Assets\logos\email.png"></a>
+            <div id="snackbb">Email us: info@fundisha.co.ke</div>
+            <a href="#location" onclick="myFunction3()"><img src="..\Assets\logos\loca.png"></a>
+            <div id="snackb">Find us: 1st flr Avenue Towers Nairobi</div>
+            <script>
+                function myFunction1() {
+                    var x = document.getElementById("snackbar");
+                    x.className = "show";
+                    setTimeout(function () { x.className = x.className.replace("show", ""); }, 6000);
+                }
+                function myFunction2() {
+                    var x = document.getElementById("snackbb");
+                    x.className = "show";
+                    setTimeout(function () { x.className = x.className.replace("show", ""); }, 6000);
+                }
+                function myFunction3() {
+                    var x = document.getElementById("snackb");
+                    x.className = "show";
+                    setTimeout(function () { x.className = x.className.replace("show", ""); }, 6000);
+                }
+            </script>
+        </div>
+        <br><br><br><br>
+        <br><br>
+    </div>
+    <div class="contain">
+        <div class="courses" id="cos">
+            <h3>COURSES</h3>
+            <div class="container">
+                <img src="assets/images/math.jpg" alt="Avatar" class="image">
+                <div class="overlay">Mathematics</div>
+            </div>
+            <div class="container">
+                <img src="assets/images/english.jpg" alt="Avatar" class="image">
+                <div class="overlay">Literature</div>
+            </div>
+            <div class="container">
+                <img src="assets/images/SCIENCES.jpg" alt="Avatar" class="image">
+                <div class="overlay">Sciences</div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="jobs" id="jbs">
+            <h3>JOBS</h3>
+            <div class="container">
+                <img src="assets/images/offer1.png" alt="Avatar" class="image">
+                <!-- <div class="overlay">Mathematics</div> -->
+            </div>
+            <div class="container">
+                <img src="assets\images\offer3.png" alt="Avatar" class="image">
+                <!-- <div class="overlay">Literature</div> -->
+            </div>
+            <div class="container">
+                <img src="assets/images/offer2.png" alt="Avatar" class="image">
+                <!-- <div class="overlay">Science</div> -->
+            </div>
+        </div>
+    </div>
+    <div class="partn"><br>
+        <div class="contain">
+            <center>
+                <h3>OUR PATNERS</h3>
+            </center>
+            <div class="gallery">
+                <img src="assets/icons/facebook.png" alt="facebook">
+                <a href="#">
+                    <div class="descr">FACEBOOK</div>
+                </a>
+            </div>
+            <div class="gallery">
+                <img src="assets/icons/andela.png" alt="andela">
+                <a href="#">
+                    <div class="descr">ANDELA</div>
+                </a>
+            </div>
+            <div class="gallery">
+                <img src="assets/icons/un.png" alt="united">
+                <a href="#">
+                    <div class="descr">UNITED NATIONS</div>
+                </a>
+            </div>
+            <hr style="color: solid #e2af6d; border-top: 3px solid #e2af6d;">
+        </div>
+    </div>
+    <div class="lower">
+        <div class="contain">
+            <div class="colu">
+                <div class="row">
+                    <div class="column">
+                        <a href="#call"><img src="assets\logos\pne.png"><b>
+                                <p>+254701255700
+                            </b></p></a>
+
+                        <a href="#email"><img src="assets\logos\email.png">
+                            <p><b>info@fundisha.co.ke</b></p>
+                        </a>
+
+                        <a href="#location"><img src="assets\logos\loca.png">
+                            <p><b>1st floor Avenue Towers Nairobi</b></p>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <a href="">
+                            <p><b>Jobs</b></p>
+                        </a>
+                        <a href="">
+                            <p><b>Courses</b></p>
+                        </a>
+                        <a href="">
+                            <p><b>About Us</b></p>
+                        </a>
+                        <a href="">
+                            <p><b>Contact Us</b></p>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="">
+                            <p><b>Blogs</b></p>
+                        </a>
+                        <a href="">
+                            <p><b>FAQs</b></p>
+                        </a>
+                        <a href="">
+                            <p><b>Privacy Policy</b></p>
+                        </a>
+                        <a href="">
+                            <p><b>Terms & Conditions</b></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: solid #e2af6d; border-top: 3px solid #e2af6d;">
+        </div>
+        <div class="footer"">
+    <a href=" #">
+            <h4>FUNDISHA</h4></a>
+            <p>&copy 2020. All rights reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>

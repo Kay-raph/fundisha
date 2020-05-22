@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+        integrity="sha256-MlusDLJIP1GRgLrOflUQtshP0TwT/RHXsl1wWGnQhs=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bevan|Boogaloo|Bowlby+One+SC|Caveat+Brush|Changa+One|Chewy|Concert+One|Fredoka+One|Kumar+One|Lilita+One|Monoton|Nanum+Pen+Script|Patrick+Hand|Permanent+Marker|Rock+Salt|Rubik+Mono+One|Seymour+One|Sigmar+One|Special+Elite|Titan+One|Ultra&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Anton|Baloo|Baloo+Bhai|Bowlby+One+SC|Calistoga|Concert+One|Fredoka+One|Fugaz+One|IBM+Plex+Mono|Modak|Pangolin|Rubik+Mono+One|Special+Elite|Varela+Round|Viga&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/signUp.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="">
+    <script src="src/js/script.jss"></script>
+    <title>FUNDISHA</title>
+</head>
+<body>
+    <nav>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><a href="index.html"><img
+                    src="Assets/logos/hm.png"></a></span>
+    </nav>
+    <h1>FUNDISHA</h1>
+    <div class="signup">
+        <p1><a href="login.html"> SIGN IN</a></p1>
+        <p2><a href="signUp.html">SIGN UP</a></p2>
+    
+    </div>
+    <div class="signingup">
+        <center>
+            <form name="signUp" action="signin" method="post" enctype="multipart/form-data" accept-charset="utf-8"><br>
+                
+<!--
+                <input type="text" id="fname" name="faname" placeholder="First name" required autocomplete="on">
+                <br>
+                <input type="text" id="lname" name="laname" placeholder="Last name" required autocomplete="on">
+                <br>
+-->
+                <input type="text" id="email" name="email" placeholder="email" required autocomplete="on">
+<!--
+                <br>
+                <input type="number" id="tele" name="tel" placeholder="10 digit Mobile no." required autocomplete="on">
+-->
+<!--
+                <br>
+                <input type="date" id="dob" name="dob" required>
+                 <div class="coun">
+                <label for="country" id="ucountry">Country:</label><br>
+                <select id="country" name="country" style="background-color: #e2af6d;">
+               <option value="ke">Kenya</option>
+                <option value="ug">Uganda</option>
+                <option value="tz">Tanzania</option>
+                <option value="gh">Ghana</option>
+                <option value="ng">Nigeria</option>
+                <option value="cm">Cameroun</option>
+                <option value="rw">Rwanda</option>
+                <option value="sa">South Africa</option>
+                <option value="zm">Zambia</option>
+                </select>
+            </div>
+            <br>
+-->
+<!--
+                <center>
+                    <div class="gender">
+                        <label id="gender">Gender:</label><br>
+                        <select id="gender1" name="gender" style="background-color: #e2af6d;">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </center>
+-->
+                <br><br><br>
+                <input type="password" id="password" name="pwd" placeholder="Enter password" required>
+                <br><br>
+<!--
+                <input type="password" id="cpassword" name="cpwd" placeholder="Confirm password" required>
+                <br>
+--><br><br>
+                <button type="submit" id="register" class="submit-btn" onclick="validate()"><a style="text-decoration: none; color: #03396c;" href="#"><b>SIGN
+                            UP</b></a></button><br><br><br>
+                            <div class="frg">
+                                <p3>OR</p3>
+                            </div><br>
+                <div class="logi">
+                   <button id="faceb">f</button>
+                    
+                
+
+                 <button id="goog"><span style="color: blue;">G</span>
+                     <span style="color: red;">o</span>
+                     <span style="color: yellow;">o</span>
+                     <span style="color: blue;">g</span>
+                        <span style="color: green;">l</span>
+                     <span style="color: red;">e</span>
+                    </button>
+                </div>
+<!--
+                <div class="cr" id="#cr"><a href="login">
+                        <p><b>Have an Account? login here</b></p>
+                    </a></div>
+-->
+            </form>
+        </center>
+    </div>
+    <br><br><br><br>
+</body>
+</html>
